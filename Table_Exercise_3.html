@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table3</title>
+</head>
+<body>
+    <table class="outside-table">
+        <tr class="header-row">
+            <th>STT</th>
+            <th>Ngày Đặt</th>
+            <th>Khách Hàng</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Ghi chú</th>
+            <th>Tình trạng</th>
+        </tr>
+        <tr>
+            <td class="stt">1</td>
+            <td class="date">2022-03-05 12:44:52</td>
+            <td>kirito</td>
+            <td>0394826477</td>
+            <td class="address">40HV,PC,TDM,BD</td>
+            <td>Ok</td>
+            <td>Đã xử lý</td>
+        </tr>
+        <tr>
+            <td class="nested-table-cell" colspan="7">
+                <table class="inside-table">
+                    <p>Mã đơn hàng: <b>DCP-20220305124452</b></p>
+                    <input type="button" name="cancel" id="cancelBtn" class="button-cancel" value="Hủy">
+                    <input type="button" name="processed" id="processedBtn" class="button-processed" value="Đã xử lý">
+                    <input type="button" name="waiting" id="waitingBtn" class="button-waiting" value="Chờ kiểm tra kho">
+                    <caption class="inside-table-caption">THÔNG TIN CHI TIẾT</caption>
+                    <tr class="header-row">
+                        <th>STT</th>
+                        <th>HÌNH</th>
+                        <th>TÊN SP</th>
+                        <th>LOẠI GIÁ</th>
+                        <th>SỐ LƯỢNG</th>
+                        <th>ĐƠN GIÁ</th>
+                        <th>THÀNH TIỀN</th>
+                    </tr>
+                    <tr>
+                        <td class="stt">1</td>
+                        <td class="image"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEBMWEhUVFhcWFxUXFxgXGBIbFxUXGBcVGBUaHCggGBolGxgVITEhJSkrLi4uGCEzODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS0tLS0tLS0uLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABBEAACAQIDAwoCCAUDBAMAAAABAgADEQQSIQUxQQYTIjJRYXGBkaEHQhQjM1JiscHRgpKi4fBzsvFjcsPiFUNT/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAEDAgQFBv/EADQRAAIBAgMFBwQCAAcAAAAAAAABAgMRBCExBRJBUWETMnGBkaHRIrHh8BTBFUJSYnKSov/aAAwDAQACEQMRAD8A7jERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAERI9tvlXhsLdXbNU+4liR/3Hcvnr3SG0ldmdOnOpLdgrvoSGJzDG/EKs+lIJTH8zep09posVtmrW+0qu/cWNv5dwlLrx4HSp7IrPvZe/wBvk7F9PpXy86mbszrf0vMqcKFSZ2A25Xo/ZVWUfdvdf5Tp7SFiFxRnPY8kvpl6r4udniQHZvL4jTEIG/Emh/lOh9RJXs3blCv9lUBP3To38p1PlLYzjLRnPrYWrR78cufA2cREzNcREQBERAEREAREQBERAEREAREQBERAEREAREQDWcosU1LDuyGzWAB7LkAnyFz5Tk+z9kjGrUYrkYNqyMbsWublTp46iTX4k4/LSyXsApJ8W6Cj0Leoke5A1VFGpdgPrOJA0yj+8rklLJo2sPVqUVv05NPp/fBro8iI7V5G10JKDnOOly1u3Kel5i475o0q1aR+a3f/AJpO3viqJFmemR3sp898jvKSlRdQaaCs19bqxJFvlrDW/iWG/Sa08OtYux3sLtyo/prwv1WT9O6//Pic6XbLDeoPnLo2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5KKjCpFh1NL7+/ynopE79ZLMHyXdvlMkWz+Qjm1xbxkW4lkqs3FQlJtLRN3Xpoc4p4EnhMuhsVjwnYMDyFVetN3heTFFflEyK7nGsFyVdtyySYHkG53radVo4FF3KBMjIIsRcgOA5AqOsZv8JyWop8oMkFp7FiLsxaWCRdwAmQqgSqJJAiIgCIiAIiIAiIgCIiAIiIB4RLVTDKd4l6IBqcTsdW4TR47kiG3CTKJFibnGNu/C13JaiMjb9Nx8R+0jVPkBtem2WnQYZt7JVVV/iOYE+k+jIki5xvkz8I6uYVMc6XGopL0hftYkC5/zWdHwfJiim/pTexAuY1HA006qgS+FEqiCBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA//2Q==" alt="Red-toy-truck"></td>
+                        <td>XE Ô TÔ BEN ĐIỆN TRẺ EM NEL909</td>
+                        <td></td>
+                        <td class="quantity">1</td>
+                        <td class="price">0 VNĐ</td>
+                        <td class="bill">0 VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="total">Tổng cộng</td>
+                        <td class="total-price">0 VNĐ</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="color: red; font-weight: bold;">
+            <td class="stt">2</td>
+            <td class="date">2021-12-10 16:24:15</td>
+            <td>Đ</td>
+            <td>0344</td>
+            <td class="address">Xxz</td>
+            <td></td>
+            <td>Mới</td>
+        </tr>
+        <tr style="color: darkmagenta; font-weight: bold;">
+            <td class="stt">3</td>
+            <td class="date">2021-12-10 12:44:52</td>
+            <td>TRANMANHHOAI</td>
+            <td>0344238347</td>
+            <td class="address">BINH DUONG</td>
+            <td></td>
+            <td>Đã Hủy</td>
+        </tr>
+        <tr>
+            <td class="stt">4</td>
+            <td class="date">2021-12-10 12:44:52</td>
+            <td>TRANMANHHOAI</td>
+            <td>0344238347</td>
+            <td class="address">BINH DUONG</td>
+            <td></td>
+            <td>Đã xử lý</td>
+        </tr>
+        <tr style="color: darkmagenta; font-weight: bold;">
+            <td class="stt">5</td>
+            <td class="date">2021-12-10 12:44:52</td>
+            <td>TRANMANHHOAI</td>
+            <td>0344238347</td>
+            <td class="address">BINH DUONG</td>
+            <td></td>
+            <td>Đã Hủy</td>
+        </tr>
+    </table>
+
+    <style>
+        img {
+            width: 50%;
+            height: 50%;
+        }
+        .outside-table {
+            background-color: rgb(233, 232, 232);
+            border-collapse: collapse;
+            width: 100%;
+            height: 300px;
+        }
+        .outside-table th, td {
+            border: 0.5px gray solid;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .header-row {
+            background-color: rgb(84, 84, 84);
+            color: white;
+            font-weight: bold;
+        }
+        .nested-table-cell {
+            padding: 20px;
+            padding-bottom: 5px;
+        }
+        .inside-table {
+            align-self: center;
+            width: 100%;
+        }
+        .inside-table td {
+            background-color: white;
+        }
+        .inside-table-caption {
+            color: rgb(50, 121, 192);
+            text-align: left;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .stt, .date, .image {
+            text-align: center;
+        }
+        .address, .quantity, .price, .bill, .total, .total-price {
+            text-align: right;
+        }
+        .button-cancel {
+            transition-duration: 0.4s;
+            background-color: rgb(233, 232, 232);
+            color: orange;
+            border: 2px solid gray;
+            border-radius: 6px;
+            padding: 7px 24px;
+        }
+        .button-cancel:hover {
+            background-color: orange;
+            color: white;
+        }
+        .button-processed {
+            transition-duration: 0.4s;
+            background-color: rgb(233, 232, 232);
+            color: red;
+            border: 2px solid gray;
+            border-radius: 6px;
+            padding: 7px 24px;
+        }
+        .button-processed:hover {
+            background-color: red;
+            color: white;
+        }
+        .button-waiting {
+            transition-duration: 0.4s;
+            background-color: rgb(233, 232, 232);
+            color: blue;
+            border: 2px solid gray;
+            border-radius: 6px;
+            padding: 7px 24px;
+        }
+        .button-waiting:hover {
+            background-color: blue;
+            color: white;
+        }   
+    </style>
+</body>
+</html>

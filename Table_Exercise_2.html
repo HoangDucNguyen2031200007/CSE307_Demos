@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table2</title>
+</head>
+<body>
+    <table>
+        <tr style="font-weight: bold; background-color: orange;">
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email address</th>
+            <th>Nested Table</th>
+        </tr>
+        <tr>
+            <td>Anna Fitzgerald</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+            <td>
+                <table>
+                    <tr style="font-weight: bold;">
+                        <td>Home Phone</td>
+                        <td>Cell Phone</td>
+                    </tr>
+                    <tr>
+                        <td>888-888-880</td>
+                        <td>888-888-881</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <style>
+        table, th, td {
+            border: 0.5px black solid;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</body>
+</html>
