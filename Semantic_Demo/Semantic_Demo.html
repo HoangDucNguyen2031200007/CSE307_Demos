@@ -8,42 +8,45 @@
 </head>
 
 <body>
-    <div class="semantic-form">
-        <header>
-            <h1>Get in touch with us by filling contact form below</h1>
-        </header>
-        <main>
-            <form action="#" name="main-from">
-                <section>
-                    <input type="text" name="fullName" placeholder="* Enter your full name" required size="25">
+
+    <header>
+        <h1>Get in touch with us by filling contact form below</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" name="main-from">
+            <section>
+                <p><input type="text" name="fullName" placeholder="* Enter your full name" required size="25">
                     <input type="email" name="email" placeholder="* Enter your email address"
                         pattern="[^ @]*@[^ @].[^ @]" required size="25">
-                </section>
-                <section>
-                    <input type="text" name="fullName" placeholder="* Enter your full name" required size="25">
-                </section>
-                <section>
-                    <textarea name="message" id="message-box" cols="60" rows="10"
-                        placeholder="* Your message here"></textarea>
-                </section>
-                <section>
-                    <input type="submit" value="Send message" name="submit-message"><span>* Please fill all required
-                        form field, thanks!</span>
-                </section>
-            </form>
-        </main>
-        <footer>
-            <h1>Contact info</h1>
-            <ul type="disc">
-                <li><strong>
-                        321 Awesome Street<br>
-                        New York, NY 17022
-                    </strong></li>
-                <li><strong>info@companyname.com</strong></li>
-                <li><strong><a href="#">+1 800 123 1234 </a></strong></li>
-            </ul>
-        </footer>
-    </div>
+                </p>
+                <p><input type="text" name="subject" placeholder="* Enter your subject" required size="25"></p>
+                <p><textarea name="message" id="message-box" cols="60" rows="10"
+                        placeholder="* Your message here"></textarea></p>
+                <p><input type="submit" value="Send message" name="submit-message"><span>* Please fill all required
+                        form field, thanks!</span></p>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <h1>Contact info</h1>
+        <ul type="disc">
+            <li><strong>
+                    321 Awesome Street<br>
+                    New York, NY 17022
+                </strong></li>
+            <li><strong>info@companyname.com</strong></li>
+            <li><strong><a href="#">+1 800 123 1234 </a></strong></li>
+        </ul>
+    </footer>
+
 
 </body>
 
